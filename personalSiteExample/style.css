@@ -1,0 +1,72 @@
+*{
+    font-family: 'Comfortaa', cursive;
+}
+body{
+    background-color: black;
+}
+.main{
+    position: relative;
+    background-color: black;
+    height: 50vh;
+    width: 50vh;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg); 
+    margin: 0 auto;
+    margin-top: 25vh;
+}
+.rhombus{
+    margin: 0 auto;
+    display: inline-table;
+    position: relative;
+    height: 24.7vh;
+    width: 24.7vh;
+    background-color: black;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+
+p{
+    height: 12vh;
+    width: 12vh;
+    color: white;
+    font-size: 2vh;
+    margin-top: 10vh;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg); 
+    text-align: center;
+    margin-left: 10vh;
+}
+.dummy{
+    height:inherit;
+    width:inherit;
+    background-color: inherit;
+    position: absolute;
+    border: 1px solid white;
+}
+.rhombus.bottomRow{
+    margin-left: -.35vh;
+}
+.button:hover p{
+    text-decoration: underline;
+}
+.button:hover ~ .rhombus.content .dummy{
+    background-color: white;
+}
+.button:hover ~ .content p{
+    color: black;
+}
+img{
+    height: 2vh;
+    width: 2vh;
+    text-align: center;
+}
+.content{
+    border: 0;
+}
