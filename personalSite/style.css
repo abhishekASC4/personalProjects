@@ -1,0 +1,35 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+body{
+    background: url("assets/background.jpg");
+    background-size: inherit;
+}
+.line{
+    position: relative;
+    padding-top: 20vh;
+    width: 66vw;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    font-size: 8vh;
+}
+img{
+    height: 5vh;
+    margin: 0 auto;
+    margin-bottom: -5vh;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    padding-right: 3%;
+    padding-left: 3%;
+}
+h2{
+    text-align: center;
+
+    font-size: 4vh;
+}
+.iconLine{
+    display: inline-block;
+}
