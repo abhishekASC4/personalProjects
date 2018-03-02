@@ -4,7 +4,7 @@
 }
 body{
     background: url("assets/background.jpg");
-    background-size: inherit;
+    background-size: cover;
 }
 .line{
     position: relative;
