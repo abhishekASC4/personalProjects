@@ -53,6 +53,9 @@ p{
 .rhombus.bottomRow{
     margin-left: -.35vh;
 }
+.button:hover{
+    cursor: pointer;
+}
 .button:hover p{
     text-decoration: underline;
 }

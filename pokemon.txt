@@ -1,0 +1,28 @@
+var allInstances = [];
+class pokemon{
+    constructor(name,type,hp,def,atk,legend){
+        if(typeof(name) != 'string' || typeof(type) != 'string' || typeof(hp) != 'number'|| typeof(def) != 'number'|| typeof(atk) != 'number'|| typeof(legend) != 'boolean'){
+            throw "TypeError"
+        }else{
+          this.name = name;
+          this.type = type;
+          this.hp = hp;
+          this.def = def;
+          this.atk = atk;
+          this.legend = legend;
+          this.all = allInstances;
+          allInstances.push(this)
+        }
+    }
+    attack(target){
+      if(typeof(target) != 'object'){
+        throw "TypeError"
+      }else{
+        target.hp = target.hp - (this.atk - target.def);
+      }
+    }
+    aliveCheck(){
+      return this.hp > 0;
+    }
+    
+}
