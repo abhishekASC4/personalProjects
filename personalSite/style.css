@@ -1,48 +1,61 @@
-*{
-    font-family: 'Source Sans Pro', sans-serif;
-    color: white;
+html{
+    background: linear-gradient(rgba(0,0,0,.95),rgba(0,0,0,.85)),url("https://picsum.photos/600/400/?random");
+    background-size: cover;
+    height:1vh
 }
 body{
-    background: url("assets/background.jpg");
-    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
-.line{
-    position: relative;
-    padding-top: 20vh;
-    width: 66vw;
-    margin: 0 auto;
-}
-h1{
+.me{
+    font-size: 3vmin;
     text-align: center;
-    font-size: 8vh;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
-img{
-    height: 0vh;
-    margin: 0 auto;
-    margin-bottom: -5vh;
-    -webkit-filter: invert(1);
-    filter: invert(1);
-    padding-right: 3%;
-    padding-left: 3%;
+.stuff{
+    margin-left: -37vw;
+    flex-direction: row;
+    width: 100vw;
 }
-h2{
-    text-align: center;
-
-    font-size: 4vh;
-}
-
-
-.button{
-    cursor: pointer;
-    margin: 0 auto;
-    border-radius: 50%;
-    width: 10vw;
-    background-color: white;
-
+.innerStuff{
+    display: inline;
 }
 p{
+    background-color: white;
     color: black;
+    font-size: 2vmin;
+    padding: 10px;
+    display: inline;
+    
 }
-.iconline{
-    height: 5vh;
+p:hover{
+    transition: 800ms ease all;
+    cursor: pointer;
+    background-color: transparent;
+    color: transparent;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+img{
+    opacity: 0;
+    filter: invert(100%);
+    height: 0;
+    display:none;
+}
+p:hover + a img{
+    opacity: 1;
+}
+a{
+    background-color: transparent;
 }
